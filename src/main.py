@@ -63,4 +63,5 @@ def main():
         print("Option out of range")
 
 if __name__ == '__main__':
-    main()
+    for i in range(1):
+        main()
