@@ -44,7 +44,7 @@ def main():
         print(scanner.scaninfo())
         print("IP status: ", scanner[ip_addr].state())
         print(scanner[ip_addr].all_protocols())
-        print("Open ports: ", scanner[ip_addr]['mode: agressive'].keys())
+        print("Open ports: ", scanner[ip_addr]['mode: comprehensive'].keys())
     elif resp == '4':
         print("Nmap Version: ",scanner.nmap_version())
         scanner.scan(ip_addr, "1-1024", "-v -A")
